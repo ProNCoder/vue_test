@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/vue@3"></script>
-    <title>Document</title>
+<html lang="en" <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://unpkg.com/vue"></script>
+<title>Document</title>
 </head>
 
 <body>
 
+    <h1>Salom</h1>
     <div id="app">
         <p>hello Vue.js</p>
+        <h3>{{age}}</h3>
+        <div v-if="nameBool">
+            <h1>{{name}}</h1>
+        </div>
         <h2>{{name}}</h2>
+        <button @click="oshir">Oshirib ko'rchi</button>
+        <button @click="qushish(name='salom hammaga')">kirish</button>
+        <button @click="tekshir">Kurinmay qolishi uchun bosing</button>
 
     </div>
 
