@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Document</title>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background-color: #123456;
+            margin: 20px;
+            display: inline-block;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <h2>{{x+y}}</h2>
+        <h2>{{z}}</h2>
+        <div class="box" @mouseover="result">mouseover</div>
+        <div class="box" @mouseleave="result">mouseleave</div>
+        <div class="box" @dblclick="result">double click</div>
+        <div class="box" @mousemove="newName">Position{{x}}:{{y}}</div>
+    </div>
+    <script src="./script.js">
+    </script>
+</body>
+
+</html>
